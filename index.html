@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crie Aqui o seu Evento</title>
+  
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="page">
+      <header>
+         <h1>Crie e compartilhe </br>seu evento.</h1>
+         <p>O primeiro passo, é preencher esse</br> formulário de inscrição.</p>
+      </header>
+
+      <form id="my-form">
+         <fieldset>
+            <div class="fieldset-wapper">
+               <legend>Informações do Evento</legend>
+                  <div class="input-wapper">
+                     <label for="envent-title">Título do Evento <span>(mínimo 8 caracteres)</span></label>
+                     <input 
+                     type="text" 
+                     id="envent-title"
+                     required
+                     minlength="8">
+                  </div>
+
+                  <div class="input-wapper">
+                     <label for="envent-link">Link do Envento <span>(comece com https://)</span></label>
+                     <input 
+                     type="url" 
+                     id="envent-link"
+                     required>
+                  </div>
+
+                  <div class="input-wapper">
+                     <label for="contact-number">Whatsapp para Contato <span>(somente números)</span></label>
+                     <input 
+                     type="number" 
+                     id="contact-number">
+                  </div>
+
+                  <div class="input-wapper">
+                     <label for="extra-information">Informções Extras</label>
+                     <textarea id="extra-information"></textarea>
+                  </div>
+
+                  <div class="input-wapper">
+                     <label for="category">Categoria</label>
+                     <select id="category">
+                        <option value="music">Noite de Louvor</option>
+                        <option value="game">Noite do Game</option>
+                        <option value="movie">Filme</option>
+                        <option value="Camping">Acampadentro</option>
+                     </select>
+                  </div>
+         </fieldset> 
+
+         <fieldset>  
+            <div class="fieldset-wapper">
+               <legend>Privacidade</legend>
+
+                  <div class="input-wapper">
+                     <label for="admin-email">E-mail do Administrador <span>(digite um email válido)</span></label>
+                     <input 
+                     type="email" 
+                     id="admin-email"
+                     required>
+                  </div>
+                  
+                  <div class="input-wapper">
+                     <label for="envent-password">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
+                     <input 
+                     type="password" 
+                     id="envent-password"
+                     required
+                     minlength="8">
+                  </div>
+
+                  <div class="input-checkbox">  
+                     <input type="checkbox" id="envent-check">
+                     <label for="envent-check">Evento Privado</label>
+                  </div>   
+               </div>
+         </fieldset>
+
+          <fieldset> 
+            <div class="fieldset-wapper">
+                  <legend>Dia e Hora</legend>
+               <div class="col-3">   
+                  
+
+                     <div class="input-wapper">
+                        <label for="envent-date">Data</label>
+                        <input 
+                        type="date" 
+                        id="envent-date"
+                        required>
+                     </div>
+                     
+                     <div class="input-wapper">
+                        <label for="envent-begin">Das</label>
+                        <input type="time" id="envent-begin">
+                     </div>
+
+                     <div class="input-wapper">
+                        <label for="envent-end">Até</label>
+                        <input type="time" id="envent-end">
+                     </div>
+               </div>
+            </div>
+         </fieldset> 
+    
+      </form>
+       <footer> 
+         <button      
+               class="buttons" 
+               form="my-form" >
+               Salvar Evento
+         </button>  
+      </footer>
+   </div>
+</body>
+</html>
